@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiosaavn-Clone</title>
+    <link rel="shortcut icon" href="../assets/jiosaavnlogo.svg"type="image/x-icon"/>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+  </head>
+  
+  
+  <body class="">
+    <header class="h-[63.25px] w-[100vw] flex shadow bg-[#F6F6F6]">
+      
+      <div class="h-full w-[400px] flex items-center justify-around">
+        <img src="../assets/jiosaavnlogo.svg" alt="logo"title="logo"class="h-[32px]"/>
+        <a href="#" class="font-semibold cursor-pointer">Music</a>
+        <a href="#" class="font-semibold cursor-pointer">Podcasts</a>
+        <a href="#" class="font-semibold cursor-pointer">Pro</a>
+      </div>
+
+      <div class="w-[1050px] h-full flex justify-center items-center">
+        
+        <div class="w-[608px] h-[40px] rounded-full flex justify-center items-center shadow hover:bg-white bg-white">
+          <i class="fa-solid fa-magnifying-glass ml-32"></i>
+          <input type="text" placeholder="Search" class="ml-2 outline-none " />
+        </div>
+      
+      </div>
+  
+  
+      <div class="h-full w-[340px] flex justify-evenly items-center">
+        <select name="" id="language" class="font-semibold cursor-pointer">
+          <option value="">Music Language</option>
+          <option value="Tamil">Tamil</option>
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Telugu">Telugu</option>
+          <option value="Malayalam">Malayalam</option>
+        </select>
+
+        <a href="#" class="font-semibold cursor-pointer">LogIn</a>
+        <a href="#" class="font-semibold cursor-pointer">SignUp</a>
+      </div>
+    </header>
+
+    <!--Sidebar+Main+navslide for music queue-Content in section-->
+    <section class="flex w-auto">
+    <!--sidebar-->
+      <aside class="h-[570px] w-[236px] shadow flex-cols items-center justify-center overflow-y-scroll">
+        
+        <div class="ml-12">
+          <h3 class="mt-12 text-sm font-semibold text-gray-400">BROWSE</h3>
+          <div>
+            <a href="" class="block text-[17px] mt-5      font-medium text-gray-700 hover:text-gray-950">New Releases</a>
+            <a href="" class="block text-[17px] mt-[12px] font-medium text-gray-700 hover:text-gray-950">Top Charts</a>
+            <a href="" class="block text-[17px] mt-[12px] font-medium text-gray-700 hover:text-gray-950">Top Playlists</a>
+            <a href="" class="block text-[17px] mt-[12px] font-medium text-gray-700 hover:text-gray-950">Podcasts</a>
+            <a href="" class="block text-[17px] mt-[12px] font-medium text-gray-700 hover:text-gray-950">Top Artists</a>
+            <a href="" class="block text-[17px] mt-[12px] font-medium text-gray-700 hover:text-gray-950">Radio</a>
+          </div>
+
+          <h3 class="mt-8 text-sm font-semibold text-gray-400">LIBRARY</h3>
+          <span class="block text-[17px] mt-[12px] font-medium hover:text-teal-400"><i class="fa-solid fa-clock-rotate-left"></i><a href="" class="ml-3">History</a></span>
+          <span class="block text-[17px] mt-[12px] font-medium hover:text-teal-400"><i class="fa-solid fa-music"></i><a href="" class="ml-3">Liked Songs</a></span>
+          <span class="block text-[17px] mt-[12px] font-medium hover:text-teal-400"><i class="fa-solid fa-record-vinyl"></i><a href="" class="ml-3">Album</a></span>
+          <span class="block text-[17px] mt-[12px] font-medium hover:text-teal-400"><i class="fa-solid fa-podcast"></i><a href="" class="ml-3">Podcasts</a></span>
+          <span class="block text-[17px] mt-[12px] font-medium hover:text-teal-400"><i class="fa-solid fa-microphone"></i><a href="" class="ml-3">Artists</a></span>
+        </div>
+        <button class="h-[47px] w-[149px] text-teal-300 border-2 border-[#5dc1b6] hover:text-teal-700 hover:border-teal-700 font-semibold rounded-full mt-[25px] mb-2 ml-12">
+          <i class="fa-regular fa-plus"></i> New Playlist
+        </button>
+        
+      </aside>
+
+      <!------------------------------------------------------- Main Content ---------------------------------------------------->
+      <main class="h-[570px] w-[calc(100vw-264px)] shadow overflow-y-scroll overflow-x-hidden   flex">  <!---->
+
+      <div>
+        <!--Trending Now-->
+        <div>
+          <h1
+            class="font-semibold text-2xl text-gray-700 px-4 mt-10 mb-6 ml-10"
+          >
+            Trending Now
+          </h1>
+          <div class="flex">
+            <div class=" px-4 ml-10">
+              <img src="../assets/Dragon-Tamil-2025-20250221231203-150x150.jpg"class="h-[128px] w-[128px] rounded-[6px]"alt=""/>
+              <h3 class="font-semibold text-center">Dragon</h3>
+              <h4 class="font-normal text-center">Leon James</h4>
+            </div>
+            <div class=" px-4">
+              <img src="../assets/Golden-Sparrow-From-Nilavuku-En-Mel-Ennadi-Kobam-Tamil-2024-20241116194614-150x150.jpg"class="h-[128px] w-[128px] rounded-[6px]"alt=""/>
+              <h3 class="font-semibold text-center">NEEK</h3>
+              <h4 class="font-normal text-center">Dhanush</h4>
+            </div>
+            <div class=" px-4">
+              <img src="../assets//Jailer-Tamil-2023-20230728081443-150x150.jpg"class="h-[128px] w-[128px] rounded-[6px]"alt=""/>
+              <h3 class="font-semibold text-center">Jailer</h3>
+              <h4 class="font-normal text-center">Rajinikanth</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Gilli-Tamil-Tamil-2004-20190110130805-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Gilli</h3>
+              <h4 class="font-normal text-center">Vijay,Prakash Raj</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Let_sPlayShakthisreeGopalan_20250301024633_150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Soulful songs</h3>
+              <h4 class="font-normal text-center">Shakthisree</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Paiya Dei</h3>
+              <h4 class="font-normal text-center">Asal Kolaru</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Sithira-Puthiri-from-Think-Indie-Tamil-2025-20250131150403-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Sithiri Puthiri</h3>
+              <h4 class="font-normal text-center">Sai Abyankar</h4>
+            </div>
+          </div>
+
+          <div class="flex mt-[24px]">
+            <div class="row1 px-4 ml-10">
+              <img
+                src="../assets/Pulla-Reprise-Version-From-Nilavuku-En-Mel-Ennadi-Kobam-Tamil-2025-20250224203642-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">PULLA</h3>
+              <h4 class="font-normal text-center">Dhanush</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Pushpa-2-The-Rule-Tamil-Tamil-2024-20241205211022-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Pushpa-2</h3>
+              <h4 class="font-normal text-center">Allu Arjun</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/SadLoveTamil_20250214065131_150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Breakup songs</h3>
+              <h4 class="font-normal text-center">Aniruth </h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Vaa-Vaathiyaar-Tamil-2025-20250214201803-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Vaa vaathiya</h3>
+              <h4 class="font-normal text-center">Karthi</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Vidaamuyarchi-Tamil-2025-20250217133052-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Vidaamuyarchi</h3>
+              <h4 class="font-normal text-center">Thala</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Vettaiyan-Original-Motion-Picture-Soundtrack-Tamil-2024-20241014154253-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Vetaiyan</h3>
+              <h4 class="font-normal text-center">Rajinikanth</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Dheema-From-Love-Insurance-Kompany-Tamil-2024-20241015191442-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Dheema Dheema</h3>
+              <h4 class="font-normal text-center">Aniruth</h4>
+            </div>
+         
+          </div>
+        </div>
+
+        <!--Top Charts-->
+        <div>
+          <h1
+            class="font-semibold text-2xl text-gray-700 px-4 mt-10 mb-6 ml-10"
+          >
+            Top Charts
+          </h1>
+          <div class="flex">
+            <div class=" px-4 ml-10">
+              <img src="../assets/Dragon-Tamil-2025-20250221231203-150x150.jpg"class="h-[128px] w-[128px] rounded-[6px]"alt=""/>
+              <h3 class="font-semibold text-center">Dragon</h3>
+              <h4 class="font-normal text-center">Leon James</h4>
+            </div>
+            <div class=" px-4">
+              <img src="../assets/Golden-Sparrow-From-Nilavuku-En-Mel-Ennadi-Kobam-Tamil-2024-20241116194614-150x150.jpg"class="h-[128px] w-[128px] rounded-[6px]"alt=""/>
+              <h3 class="font-semibold text-center">NEEK</h3>
+              <h4 class="font-normal text-center">Dhanush</h4>
+            </div>
+            <div class=" px-4">
+              <img src="../assets//Jailer-Tamil-2023-20230728081443-150x150.jpg"class="h-[128px] w-[128px] rounded-[6px]"alt=""/>
+              <h3 class="font-semibold text-center">Jailer</h3>
+              <h4 class="font-normal text-center">Rajinikanth</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Gilli-Tamil-Tamil-2004-20190110130805-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Gilli</h3>
+              <h4 class="font-normal text-center">Vijay,Prakash Raj</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Let_sPlayShakthisreeGopalan_20250301024633_150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Soulful songs</h3>
+              <h4 class="font-normal text-center">Shakthisree</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Paiya Dei</h3>
+              <h4 class="font-normal text-center">Asal Kolaru</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Sithira-Puthiri-from-Think-Indie-Tamil-2025-20250131150403-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Sithiri Puthiri</h3>
+              <h4 class="font-normal text-center">Sai Abyankar</h4>
+            </div>
+          </div>
+
+          <div class="flex mt-[24px]">
+            <div class="row1 px-4 ml-10">
+              <img
+                src="../assets/Pulla-Reprise-Version-From-Nilavuku-En-Mel-Ennadi-Kobam-Tamil-2025-20250224203642-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">PULLA</h3>
+              <h4 class="font-normal text-center">Dhanush</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Pushpa-2-The-Rule-Tamil-Tamil-2024-20241205211022-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Pushpa-2</h3>
+              <h4 class="font-normal text-center">Allu Arjun</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/SadLoveTamil_20250214065131_150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Breakup songs</h3>
+              <h4 class="font-normal text-center">Aniruth </h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Vaa-Vaathiyaar-Tamil-2025-20250214201803-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Vaa vaathiya</h3>
+              <h4 class="font-normal text-center">Karthi</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Vidaamuyarchi-Tamil-2025-20250217133052-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Vidaamuyarchi</h3>
+              <h4 class="font-normal text-center">Thala</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Vettaiyan-Original-Motion-Picture-Soundtrack-Tamil-2024-20241014154253-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Vetaiyan</h3>
+              <h4 class="font-normal text-center">Rajinikanth</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/Dheema-From-Love-Insurance-Kompany-Tamil-2024-20241015191442-150x150.jpg"
+                class="h-[128px] w-[128px] rounded-[6px]"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Dheema Dheema</h3>
+              <h4 class="font-normal text-center">Aniruth</h4>
+            </div>
+         
+          </div>
+        </div>
+
+
+
+        <!--Top Artists-->
+        <div class="shadow py-[20px]">
+          <h1 class="font-semibold text-2xl text-gray-700 px-4 mt-10 mb-6 ml-10">Top Artists</h1>
+          <div class="flex">
+            <div class=" px-4 ml-10">
+              <img src="../assets/jiosaavn-artist/Anirudh_Ravichander_002_20240103064558_150x150.jpg"class="h-[128px] w-[128px] rounded-full"alt=""/>
+              <h3 class="font-semibold text-center">Aniruth</h3>
+              <h4 class="font-normal text-center">Artist Radio</h4>
+            </div>
+            <div class=" px-4">
+              <img src="../assets/jiosaavn-artist/Dhanush_150x150.jpg"class="h-[128px] w-[128px] rounded-full"alt=""/>
+              <h3 class="font-semibold text-center">Dhanush</h3>
+              <h4 class="font-normal text-center">Artist Radio</h4>
+            </div>
+            <div class=" px-4">
+              <img src="../assets/jiosaavn-artist/Pradeep_Kumar_001_20220216130035_150x150.jpg"class="h-[128px] w-[128px] rounded-full"alt=""/>
+              <h3 class="font-semibold text-center">Pradeep Kumar</h3>
+              <h4 class="font-normal text-center">Artist Radio</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/jiosaavn-artist/Sid_Sriram_005_20240425180600_150x150.jpg"
+                class="h-[128px] w-[128px] rounded-full"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Sid Sriram</h3>
+              <h4 class="font-normal text-center">Artist Radio</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/jiosaavn-artist/Yuvan_Shankar_Raja_002_20180802174245_150x150.jpg"
+                class="h-[128px] w-[128px] rounded-full"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Yuvan Shankar </h3>
+              <h4 class="font-normal text-center">Artist Radio</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/jiosaavn-artist/Vijay_Antony_150x150.jpg"
+                class="h-[128px] w-[128px] rounded-full"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">Paiya Dei</h3>
+              <h4 class="font-normal text-center">Artist Radio</h4>
+            </div>
+            <div class="row1 px-4">
+              <img
+                src="../assets/jiosaavn-artist/Hiphop_Tamizha_002_20230315131424_150x150.jpg"
+                class="h-[128px] w-[128px] rounded-full"
+                alt=""
+              />
+              <h3 class="font-semibold text-center">HipHop Thamizha</h3>
+              <h4 class="font-normal text-center">Independent Artist </h4>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="contact-info h-[580px] w-[80vw] flex flex-col  py-[30px]">
+          <div class="h-[430px] flex justify-evenly mt-[50px] shadow">
+            <div >
+              <h4 class="font-semibold text-[13px]">TOP ARTISTS</h4>
+              <h5 class="mt-[15px] cursor-pointer">Aniruth</h5>
+              <h5 class="cursor-pointer">Pradeep Kumar</h5>
+              <h5 class="cursor-pointer">HipHop thamizhan</h5>
+              <h5 class="cursor-pointer">Sid Sriram</h5>
+              <h5 class="cursor-pointer">Raghu Dixit</h5>
+              <h5 class="cursor-pointer">Yuvan Shankar</h5>
+              <h5 class="cursor-pointer">Dhanush</h5>
+              <h5 class="cursor-pointer">G V Prakash</h5>
+              <h5 class="cursor-pointer">Harrish Jayaraj</h5>
+              <h5 class="cursor-pointer">A R Rehman</h5>
+              <h5 class="cursor-pointer">Jonita Gandhi</h5>
+            </div>
+            <div>
+              <div>
+                <h4 class="font-semibold text-[13px]">TOP ACTORS</h4>
+                <h5 class="mt-[15px] cursor-pointer">Vijay</h5>
+                <h5 class="cursor-pointer">Ajith Kumar</h5>
+                <h5 class="cursor-pointer">Sivakarthikeyan</h5>
+                <h5 class="cursor-pointer">Simbu</h5>
+                <h5 class="cursor-pointer">Dhanush</h5>
+              </div>
+              <div>
+                <h4 class="font-semibold text-[13px] mt-[15px]">BROWSE</h4>
+                <h5 class="mt-[15px] cursor-pointer">New Releases</h5>
+                <h5 class="cursor-pointer">Featured Playlists</h5>
+                <h5 class="cursor-pointer">Weekly Top Songs</h5>
+                <h5 class="cursor-pointer">Top Artists</h5>
+                <h5 class="cursor-pointer">Top Charts</h5>
+                <h5 class="cursor-pointer">Top Radios</h5>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-semibold text-[13px]">DEVOTIONAL SONGS</h4>
+              <h5 class="mt-[15px] cursor-pointer">Krishna Bhajan</h5>
+              <h5 class="cursor-pointer">Mahamrityunjaya Mantra</h5>
+              <h5 class="cursor-pointer">Deva Shree Ganesha</h5>
+              <h5 class="cursor-pointer">Hanuman Chalisa</h5>
+              <h5 class="cursor-pointer">Gayatri Mantra</h5>
+              <h5 class="cursor-pointer">Mata Ke Bhhajan</h5>
+              <h5 class="cursor-pointer">Durga Chalisa</h5>
+              <h5 class="cursor-pointer">Maiya Yoshoda</h5>
+              <h5 class="cursor-pointer">Bhakti Geet</h5>
+            </div>
+            <div>
+              <h4 class="font-semibold text-[13px] ">LANGUAGE</h4>
+              <div class="mt-[15px]">
+              <h5 >Hindi Songs</h5>
+              <h5>English Songs</h5>
+              <h5>Tamil Songs</h5>
+              <h5>Punjabi Songs</h5>
+              <h5>Bhojpuri Songs</h5>
+              <h5>Telugu Songs</h5>
+              <h5>Kannada Songs</h5>
+              <h5>Gujarati Songs</h5>
+              <h5>Marati Songs</h5>
+              <h5>Odia Songs</h5>
+              <h5>Rajasthani Songs</h5>
+              <h5>Haryanvi Songs</h5>
+              <h5>Assamese Songs</h5>
+              <h5>Malayalam Songs</h5>
+              <h5>Bengali Songs</h5>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-semibold text-[13px]">ARTIST ORIGINALS</h4>
+              <h5 class="mt-[15px]">Zaeden-Dooriyan</h5>
+              <h5>Raghav-Sufi</h5>
+              <h5>SIXK-Dansa</h5>
+              <h5>Siri-My Jam</h5>
+              <h5>Last Stories,"Mai Ni Meriye"</h5>
+            </div>
+            <div>
+              <h4 class="font-semibold text-[13px]">COMPANY</h4>
+              <h5 class="mt-[15px]">About Us</h5>
+              <h5>Culture</h5>
+              <h5>Blog</h5>
+              <h5>JObs</h5>
+              <h5>Press</h5>
+              <h5>Advertise</h5>
+              <h5>Terms & Privacy</h5>
+              <h5>Help & Support</h5>
+              <h5>Grievances</h5>
+              <h5>JioSaavn Artist Insights</h5>
+              <h5>JioSaavn YourCast</h5>
+            </div>
+          </div>
+        <div class="h-[290px] w-full " >
+          <div class=" w-full shadow">
+            <div class="h-[70px]  w-full  flex ml-[50px] mt-[40px]  ">
+              <h4 class="mr-[25px]">JioSaavn Pro</h4>
+              <h4 class="mr-[25px]">JioSaavn for IOS</h4>
+              <h4 class="mr-[25px]">JioSaavn for Android</h4>
+              <h4 class="mr-[25px]">New Releases</h4>
+            </div>
+          </div>
+       
+          <div class="h-[70px] w-[70vw] flex justify-between items-center ml-[50px] mt-[5px]   ">
+            <div>&copy 2025 Saavn Media Limited All Rights reserved.</div>
+            <div class="flex justify-between items-center gap-4 ">
+              <h4>FOLLOW US</h4>
+              <i class=" fa-brands fa-square-facebook text-blue-600 text-2xl"></i>
+              <i class=" fa-brands fa-x-twitter text-2xl"></i>
+              <i class=" fa-brands fa-youtube text-red-600 text-2xl"></i>
+              <i class=" fa-brands fa-instagram text-pink-600 text-2xl"></i>
+              <i class=" fa-brands fa-linkedin text-blue-800 text-2xl"></i>
+            </div>
+          </div>
+        </div>
+    
+        </div>
+        <!--transition box-->
+        <!-- <section class="h-[394px] w-[437px] shadow-amber-400"></section>  -->
+      </div>
+      <article class="h-[467px] w-[437px] mt-[80px] ml-[50px]  shadow-2xl rounded-[10px] hover:-translate-x-96 transition ease-in-out duration-500 bg-white z-10 fixed left-11/12 top-5.5">
+        <div class="w-[400px] h-[59px] flex justify-between items-center">
+          <h1 class="text-black font-semibold ml-[20px]">Queue</h1>
+          <div class=" w-[200px]  flex justify-around align-center">
+            <i class="fa-solid fa-ellipsis-vertical mt-[10px]"></i>
+            <button class="w-[80px] h-[33px] bg-[#EAEAEA] rounded-full text-white">Save</button>
+            <button class="w-[80px] h-[33px] bg-[#EAEAEA] rounded-full text-white">Clear</button>
+       
+          </div>
+        </div>
+        <div class="w-full h-[307px] flex flex-col gap-y-[10px] items-center  mt-[90px]">
+          <h1 class="text-[24px] font-semibold">It's pretty quite in here</h1>
+          <h5 class="text-sm mb-[50px]">Go find some tunes</h5>
+      
+          <button class="w-[263px] h-[33px] bg-teal-300 text-white rounded-full hover:bg-[#258F83] mt-[-30px]">Play Weekly Top Songs</button>
+          <button class="w-[263px] h-[33px] text-gray-500 font-semibold rounded-full border hover:text-[#258F83] hover:border border-[#258F83]">Browse New Releases</button>
+        </div>
+      </article>
+      </main>
+
+    </section>
+
+    <footer class="h-[82px] flex justify-center items-center">
+      <audio
+        class="w-[90vw] h-full"
+        src="../assets/Maname Maname.mp3"
+        controls
+      ></audio>
+   
+    </footer> 
+   
+  </body>
+</html>
